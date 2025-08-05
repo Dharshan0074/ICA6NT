@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>About Us</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Titillium+Web:wght@300;400&display=swap" rel="stylesheet">
+  
+
+   <style>
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+
+       body {
+           font-family: 'Titillium Web', sans-serif;
+           background: linear-gradient(to right, #f4f4f9, #e8e8f0);
+           color: #333;
+           line-height: 1.8;
+           animation: fadeIn 1.5s ease-in-out;
+       }
+
+       header {
+           background: linear-gradient(90deg, #1D3557, #457B9D);
+           color: white;
+           padding: 40px 20px;
+           text-align: center;
+           box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+       }
+
+       header h1 {
+           font-family: 'Playfair Display', serif;
+           font-size: 48px;
+           margin: 0;
+           animation: slideDown 1s;
+           letter-spacing: 2px;
+       }
+
+       .content {
+           padding: 50px 30px;
+           background: #ffffff;
+           margin: 40px auto;
+           max-width: 1200px;
+           border-radius: 15px;
+           box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+           animation: fadeInUp 1s;
+       }
+
+       .content h2 {
+           font-family: 'Playfair Display', serif;
+           color: #1D3557;
+           font-size: 32px;
+           border-bottom: 3px solid #457B9D;
+           padding-bottom: 12px;
+           margin-bottom: 30px;
+           text-align: center;
+       }
+
+       .content p {
+           font-size: 18px;
+           margin-bottom: 25px;
+           text-align: justify;
+       }
+
+       .content ul {
+           list-style: disc;
+           padding-left: 30px;
+           margin-bottom: 30px;
+       }
+
+       .content ul li {
+           margin-bottom: 12px;
+           font-size: 17px;
+       }
+
+       footer {
+           background: linear-gradient(90deg, #457B9D, #1D3557);
+           color: white;
+           text-align: center;
+           padding: 25px 15px;
+           font-size: 15px;
+           animation: fadeInUp 1s;
+           margin-top: 40px;
+       }
+
+       footer a {
+           color: #A8DADC;
+           text-decoration: none;
+           margin: 0 12px;
+           font-weight: bold;
+           transition: color 0.3s ease;
+       }
+
+       footer a:hover {
+           color: #F1FAEE;
+       }
+
+       @keyframes fadeIn {
+           from { opacity: 0; }
+           to { opacity: 1; }
+       }
+
+       @keyframes fadeInUp {
+           from { opacity: 0; transform: translateY(20px); }
+           to { opacity: 1; transform: translateY(0); }
+       }
+
+       @keyframes slideDown {
+           from { opacity: 0; transform: translateY(-30px); }
+           to { opacity: 1; transform: translateY(0); }
+       }
+
+       /* Additional design enhancements */
+       .content::before {
+           content: '';
+           position: absolute;
+           width: 100px;
+           height: 100px;
+           background: #A8DADC;
+           border-radius: 50%;
+           top: -50px;
+           left: -50px;
+           opacity: 0.1;
+       }
+
+       .content::after {
+           content: '';
+           position: absolute;
+           width: 120px;
+           height: 120px;
+           background: #F1FAEE;
+           border-radius: 50%;
+           bottom: -60px;
+           right: -60px;
+           opacity: 0.1;
+       }
+
+       @media (max-width: 768px) {
+           .content {
+               padding: 30px 20px;
+           }
+
+           header h1 {
+               font-size: 36px;
+           }
+
+           .content h2 {
+               font-size: 26px;
+           }
+       }
+   </style>
+</head>
+<body>
+
+<header>
+   <h1>About Us</h1>
+</header>
+
+<div class="content">
+   <h2>About The Institution</h2>
+   <p>Velammal Institute of Technology is the brainchild of our chairman Shri.M.V.Muthuramalingam, a pioneer in the field of education. The Institution reflects the ideals of its founder and seeks to achieve excellence. Established in 2008 by Velammal Educational Trust, it has been approved by AICTE, New Delhi, and affiliated with Anna University, Chennai. The Institution offers seven undergraduate courses in Engineering & Technology, with state-of-the-art laboratories, a well-stocked library, and the best computing facilities.</p>
+   <p>The Institution has consistently maintained a top-10 rank among Anna University-affiliated colleges in academics. Events like innovative project competitions, seminars, and workshops encourage students to excel academically and professionally. The management also introduced the "Founder Chairman Merit Scholarship" to reward academic excellence.</p>
+
+   <h2>About The Department of Electronics and Communication Engineering</h2>
+   <p>Established in 2008, the Department of Electronics and Communication Engineering aims to produce meritorious engineers with human values through high-quality technical education. The department has a blend of experienced and young faculty members, many of whom hold doctorates. It offers expertise in fields such as VLSI Design, Wireless Communication, and Medical Electronics. Our students are regularly placed in well-reputed companies.</p>
+
+   <h2>About The Conference</h2>
+   <p>The International Conference on Artificial Intelligence, 6G Communications, and Network Technologies (ICA6NT 2026) focuses on four major emerging research areas. This conference provides a platform to discuss AI & ML, Communication & Signal Processing, Network Technologies and Data Computing, aiming to address current challenges and explore future opportunities.</p>
+</div>
+
+<footer>
+   <p>&copy; 2025 Velammal Institute of Technology. All rights reserved.</p>
+   <p>Designed by <a href="https://nemonextechnologies.netlify.app/" target="_blank">Nemonex Technologies</a></p>
+</footer>
+
+</body>
+</html>

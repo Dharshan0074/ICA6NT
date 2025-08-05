@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Organizing Committee</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Titillium+Web:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Titillium Web', sans-serif;
+      background: linear-gradient(to right, #f1f5f9, #e2e8f0);
+      color: #2d3748;
+    }
+
+    header {
+      background: #1a202c;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      margin: 0;
+    }
+
+    .content {
+      max-width: 1300px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 28px;
+      margin: 40px 0 20px;
+      color: #1a202c;
+      font-family: 'Playfair Display', serif;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #3182ce;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .cards-group {
+      margin-bottom: 40px;
+    }
+
+    .cards-group.centered {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .cards-group.grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .cards-group.two-column {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .card {
+      background: linear-gradient(to bottom, #ffffff, #f7fafc);
+      padding: 20px;
+      border-radius: 16px;
+      border: 1.5px solid #cbd5e0;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: all 0.3s ease;
+      width: 100%;
+      max-width: 320px;
+      min-height: 200px;
+    }
+
+    .card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #2b6cb0;
+    }
+
+    .card p {
+      margin: 6px 0;
+      color: #4a5568;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+
+    .card.large {
+      transform: scale(1.05);
+      max-width: 400px;
+      min-height: 240px;
+      background: linear-gradient(to bottom right, #edf2f7, #e2e8f0);
+      border: 2px solid #a0aec0;
+    }
+
+    .general-chair-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 900px;
+      margin: 0 auto 40px;
+    }
+
+    ul li {
+      background: #e6f0fb;
+      padding: 15px 20px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      border-left: 4px solid #3182ce;
+    }
+
+    footer {
+      background: #1a202c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #f6ad55;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Organizing Committee</h1>
+</header>
+
+<div class="content">
+
+  <div class="section-title">Chief Patron</div>
+  <div class="cards-group centered">
+    <div class="card large">
+      <h3>CHIEF PATRON</h3>
+      <p>Shri.M.V.Muthuramalingam</p>
+      <p>Chairman</p>
+      <p>Velammal Educational Trust</p>
+    </div>
+  </div>
+
+  <div class="section-title">Patron</div>
+  <div class="cards-group two-column">
+    <div class="card">
+      <h3>PATRON</h3>
+      <p>Shri.M.V.M.Velmurugan</p>
+      <p>CEO</p>
+    </div>
+    <div class="card">
+      <h3>PATRON</h3>
+      <p>Shri.M.V.M.Velmohan</p>
+      <p>Correspondent</p>
+    </div>
+    <div class="card">
+      <h3>PATRON</h3>
+      <p>Shri.M.V.M.Sasikumar</p>
+      <p>Director</p>
+      <p>Velammal Educational Trust</p>
+    </div>
+    <div class="card">
+      <h3>PATRON</h3>
+      <p>Shri.S.Santhosh Kumar</p>
+      <p>Director</p>
+      <p>Velammal Global Hospital</p>
+    </div>
+  </div>
+
+  <div class="section-title">General Chair</div>
+  <div class="general-chair-wrapper">
+    <div class="card">
+      <h3>General Chair</h3>
+      <p>Shri.K.Razak</p>
+      <p>Advisor</p>
+    </div>
+    <div class="card">
+      <h3>General Chair</h3>
+      <p>Shri.M.Vaasu</p>
+      <p>Advisor</p>
+    </div>
+    <div class="card">
+      <h3>General Chair</h3>
+      <p>Dr.K.Porkumaran</p>
+      <p>Chairman</p>
+      <p>IEEE Madras Section</p>
+    </div>
+    <div class="card">
+      <h3>General Chair</h3>
+      <p>Dr.N.Balaji</p>
+      <p>Principal</p>
+    </div>
+    <div class="card">
+      <h3>General Chair</h3>
+      <p>Dr.S.Soundararajan</p>
+      <p>Vice Principal</p>
+    </div>
+  </div>
+
+  <div class="section-title">Convener</div>
+  <div class="cards-group centered">
+    <div class="card large">
+      <h3>Convener</h3>
+      <p>Dr.B.Sridevi</p>
+      <p>Professor & Head, ECE Department</p>
+      <p>Dean R&D</p>
+    </div>
+  </div>
+
+  <div class="section-title">Coordinator</div>
+  <div class="cards-group grid">
+    <div class="card">
+      <h3>Coordinator</h3>
+      <p>Dr.R.Jothi Chitra</p>
+      <p>Professor, ECE Department</p>
+    </div>
+    <div class="card">
+      <h3>Coordinator</h3>
+      <p>Dr.M.Sivarathinabala</p>
+      <p>Professor, ECE Department</p>
+    </div>
+    <div class="card">
+      <h3>Coordinator</h3>
+      <p>Mr.K.Ragupathi</p>
+      <p>Assistant Professor, ECE Department</p>
+    </div>
+  </div>
+
+  <div class="section-title">International Advisory Committee</div>
+  <ul>
+    <li>Mr. Sheikji Nazirudeen, Product Manager, Google, Mountain View, California, United States.</li>
+    <li>Mr. Venky Annadurai, Vice President, Enterprise Data & Analytics at Patelco Credit, San Francisco.</li>
+    <li>Mrs. Usha Vadivelu, QA Manager IT Application, Intuitive Surgical, Sunnyvale, California, United States.</li>
+    <li>Dr. Tawfik Al-Hadhrami, Senior Lecturer, Nottingham Trent University, UK.</li>
+    <li>Prof. Pei Xiao, University of Surrey, Guildford, United Kingdom.</li>
+    <li>Dr. C. Senthilpari, Senior Lecturer, Faculty of Eng., Multimedia University, Malaysia.</li>
+    <li>Mrs. Hasanbanu Usman, Sr. Principal RF Engineer, Northrop Grumman, USA.</li>
+    <li>Mr. Vignesh Varma Murugesan, Data Architect, Enterprise Data and Analytics, Allegis Group, Maryland, United States.</li>
+  </ul>
+
+  <div class="section-title">National Advisory Committee</div>
+  <ul>
+    <li>Dr. D. Vaithiyanathan, Professor & Head, Dept. of ECE, NIT, Delhi.</li>
+    <li>Mr. Rama Krishnan, Deputy Director DI, MSME, Chennai.</li>
+    <li>Dr. J. Sheeba Rani, Associate Professor, Department of Avionics, IISST, Trivandrum.</li>
+    <li>Dr. Pritee Khanna, Professor, Department of ECE, IIITDM, Jabalpur.</li>
+    <li>Dr. K. M. Bhurchandi, Professor, Visvesvaraya National Institute of Technology, Maharashtra.</li>
+    <li>Dr. Harigovindan V P, Associate Professor, HOD, Dept. of ECE, NIT, Puducherry.</li>
+    <li>Dr. P. Raviraj, Professor, HOD, GSSS Inst. of Engineering & Technology for Women, Karnataka.</li>
+    <li>Dr. S. Bose, Professor, Department of Computer Science and Engineering, Anna University, Chennai.</li>
+    <li>Dr. M. Mahesh, Assistant Professor, VIT-AP University.</li>
+    <li>Dr. G. Malathi, Professor Senior SCOPE, Vellore Institute of Technology, Chennai.</li>
+    <li>Dr. P. Pabitha, Associate Professor, Department of Computer Technology, Madras Institute of Technology, Chennai.</li>
+  </ul>
+
+</div>
+
+<footer>
+  <p>&copy; 2025 Velammal Institute of Technology. All rights reserved. | Designed by 
+    <a href="https://nemonextechnologies.netlify.app/" target="_blank">Nemonex Technologies</a>
+  </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Titillium Web', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+        }
+
+        header {
+            background: #345788;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .contact-card {
+            background: #345788;
+            color: white;
+            border-radius: 10px;
+            width: 300px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-card i {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .contact-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .contact-card p {
+            font-size: 16px;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .message-section {
+            display: flex;
+            justify-content: center;
+            margin: 40px 20px;
+        }
+
+        .message-form {
+            width: 50%;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .message-form h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #345788;
+            text-align: center;
+        }
+
+        .message-form input,
+        .message-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .message-form button {
+            background:#345788;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .message-form button:hover {
+            background: #345788;
+        }
+
+        .map {
+            width: calc(100% - 40px);
+            max-width: 900px;
+            height: 400px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #345788;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #A8DADC;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #dd5e1e;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Us</h1>
+</header>
+
+<div class="contact-section">
+    <div class="contact-card">
+        <i class="fas fa-phone"></i>
+        <h3>Phone</h3>
+        <p>9443667949, Dr.R.Jothi Chitra</p>
+        <p>9791246302, Dr.M.Sivarathinabala</p>
+    </div>
+    <div class="contact-card">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <p>ica6nt2025@velammalitech.edu.in</p>
+    </div>
+    <div class="contact-card">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Address</h3>
+        <p>Velammal Institute of Technology, Velammal Knowledge Park, Chennai-Kolkata Highway, Panchetti, Ponneri Taluk, Thiruvallur District-601204, Tamil Nadu, India</p>
+    </div>
+</div>
+
+<div class="message-section">
+    <form class="message-form">
+        <h3>Send Us A Message</h3>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<div class="map">
+    <iframe src="https://www.google.com/maps?q=74VX+QP7,+Kolkata+Highway,+Panjetty,+Tamil+Nadu+601204&output=embed"></iframe>
+</div>
+
+<footer>
+    <p>Velammal Institute of Technology</p>
+    <p>Chennai – Kolkata High Way, Panchetti, Thiruvallur District, Tamil Nadu 601204</p>
+    <p>Email: <a href="mailto:ica6nt2025@velammalitech.edu.in">ica6nt2025@velammalitech.edu.in</a></p>
+    <p>Phone: 9443667949 / 9791246302</p>
+    <p>Designed by <a href="https://nemonextechnologies.netlify.app/" target="_blank">Nemonex Technologies</a></p>
+</footer>
+
+</body>
+</html>

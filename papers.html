@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conference Tracks and Dates</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f7fa;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 40px;
+      gap: 50px;
+    }
+
+    .track-box, .dates-box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    }
+
+    .track-box:hover, .dates-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      color: #1f4e79;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+      transition: color 0.3s ease;
+    }
+
+    h2:hover {
+      color: #003366;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 10px 0;
+      line-height: 1.6;
+      transition: transform 0.3s ease;
+    }
+
+    li:hover {
+      transform: translateX(5px);
+      color: #1f4e79;
+    }
+
+    .dates-box ul li span {
+      font-weight: bold;
+      color: #1f4e79;
+    }
+
+    .timeline {
+      border-left: 3px solid #1f4e79;
+      padding-left: 20px;
+      margin-top: 20px;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .timeline-item:hover {
+      transform: translateX(5px);
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: -12px;
+      width: 12px;
+      height: 12px;
+      background: #1f4e79;
+      border-radius: 50%;
+    }
+
+    .note {
+      margin-top: 30px;
+      font-style: italic;
+      color: #555;
+      background: #e9f0f8;
+      padding: 15px;
+      border-radius: 10px;
+      border-left: 4px solid #1f4e79;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="track-box">
+      <h2>Track 1: Artificial Intelligence & Machine Learning</h2>
+      <ul>
+        <li>Artificial Intelligence tools & Applications</li>
+        <li>Machine learning for 5G system</li>
+        <li>Soft computing, Fuzzy Systems and ANN</li>
+        <li>Computer Vision and AI</li>
+        <li>Deep and Reinforcement learning</li>
+        <li>Pattern recognition and classification for networks</li>
+        <li>Natural Language Processing</li>
+        <li>Hybrid Intelligent Systems</li>
+        <li>AI and Robotics</li>
+        <li>Multimedia & Cognitive Informatics</li>
+      </ul>
+
+      <h2>Track 2: Communication & Signal Processing</h2>
+      <ul>
+        <li>Antenna and Wave Propagation</li>
+        <li>RF & Microwave Communications</li>
+        <li>Communication Systems for 5G and Beyond</li>
+        <li>Wireless Communications</li>
+        <li>Wireless Sensor Networks</li>
+        <li>Internet of Things</li>
+        <li>Computer Communications</li>
+        <li>Satellite and Optical Communications</li>
+        <li>Image/Speech/Video Signal Processing</li>
+        <li>MIMO and MEMS</li>
+        <li>Embedded Systems & VLSI</li>
+      </ul>
+
+      <h2>Track 3: Intelligent Automation and Computing</h2>
+      <ul>
+        <li>Robotic Process Automation</li>
+        <li>Digital Twins and Predictive Maintenance</li>
+        <li>Autonomous Systems</li>
+        <li>Cyber-Physical Systems</li>
+        <li>Smart Factories and Industry 4.0</li>
+        <li>AI in Industrial Automation</li>
+        <li>Human-Machine Interaction</li>
+        <li>Automation in Healthcare and Smart Cities</li>
+        <li>Machine Vision Systems</li>
+        <li>Edge Intelligence in Automation</li>
+      </ul>
+
+      <h2>Track 4: Cybersecurity and Blockchain</h2>
+      <ul>
+        <li>Cybersecurity Threats and Countermeasures</li>
+        <li>Cryptography and Network Security</li>
+        <li>Blockchain Applications and Architecture</li>
+        <li>Security in IoT and Embedded Systems</li>
+        <li>Risk Assessment and Management</li>
+        <li>Security in AI and ML Models</li>
+        <li>Zero Trust Architectures</li>
+        <li>Privacy-Preserving Computation</li>
+        <li>Smart Contracts and Decentralized Applications</li>
+        <li>Security Auditing and Penetration Testing</li>
+      </ul>
+    </div>
+
+    <div class="dates-box">
+      <h2>Important Dates</h2>
+      <div class="timeline">
+        <div class="timeline-item"><span>Paper Submission Opens On:</span> 3rd July 2025</div>
+        <div class="timeline-item"><span>Paper Submission Deadline:</span> 5th November 2025</div>
+        <div class="timeline-item"><span>Paper Acceptance Notification:</span> 6th January 2026</div>
+        <div class="timeline-item"><span>Camera Ready Paper Submission Deadline:</span> 10th February 2026</div>
+        <div class="timeline-item"><span>Early Bird Registration Deadline:</span> 15th March 2026</div>
+        <div class="timeline-item"><span>Final Registration Deadline:</span> 10th April 2026</div>
+        <div class="timeline-item"><span>Late Fee Registration Deadline:</span> 20th April 2026</div>
+        <div class="timeline-item"><span>Pre-Conference Tutorials Registration Deadline:</span> 30th May 2026</div>
+        <div class="timeline-item"><span>Conference Date:</span> 23rd & 24th July 2026</div>
+      </div>
+      <div class="note">
+        <strong>Note:</strong> All deadlines are 11:59 PM IST on the mentioned dates. Please ensure timely submission to avoid disqualification. The schedule is subject to change based on the organizing committee's discretion.
+      </div>
+    </div>
+  </div>
+</body>
+</html>

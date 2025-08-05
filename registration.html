@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ICA6NT 2026 Registration</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+      color: #333;
+      transition: background-color 0.3s ease;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 30px;
+      background: #ffffff;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      border-radius: 15px;
+      transition: box-shadow 0.3s ease;
+    }
+    h1 {
+      text-align: center;
+      color: #1a237e;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      transition: all 0.3s ease;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px 15px;
+      text-align: left;
+      transition: background-color 0.3s ease;
+    }
+    th {
+      background-color: #e3f2fd;
+      color: #0d47a1;
+    }
+    tr:nth-child(even) {
+      background-color: #f1f1f1;
+    }
+    tr:hover {
+      background-color: #e0f7fa;
+    }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      gap: 10px;
+    }
+    .tab-button {
+      padding: 10px 20px;
+      background: #e0e0e0;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 500;
+      border: none;
+      transition: all 0.3s ease;
+    }
+    .tab-button.active {
+      background: #1565c0;
+      color: white;
+      transform: scale(1.05);
+    }
+    .tab-content {
+      display: none;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .tab-content.active {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    ul {
+      padding-left: 20px;
+      line-height: 1.6;
+    }
+  </style>
+  <script>
+    function switchTab(tabName) {
+      document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+      document.getElementById(tabName + '-btn').classList.add('active');
+      document.getElementById(tabName).classList.add('active');
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>ICA6NT 2026 Registration Guidelines</h1>
+    <p>At least one of the authors of each accepted paper must register for the conference for the paper to be included in the conference proceedings.</p>
+    <p>All accepted and presented papers will be forwarded for possible inclusion in the IEEE Xplore digital library (Under approval).</p>
+    <p>Full registration includes the registration of one paper. Additional papers for a single registration come with an additional fee. The maximum length of the paper is 6 pages including figures, tables, and references.</p>
+    <p>Registration fee covers admission to all sessions, cost of publishing the article in conference proceedings, welcome reception, conference kit, refreshments, working lunch, banquet dinner and half-a-day tour to nearby places.</p>
+    <p>A fee of Rs. 500 will be applied for each additional page (with a maximum of 2 pages).</p>
+
+    <div class="tabs">
+      <button id="indian-btn" class="tab-button active" onclick="switchTab('indian')">Indian Authors</button>
+      <button id="foreign-btn" class="tab-button" onclick="switchTab('foreign')">Foreign Authors</button>
+    </div>
+
+    <div id="indian" class="tab-content active">
+      <table>
+        <tr><th>Category</th><th>IEEE Member (INR)</th><th>Non-IEEE Member (INR)</th></tr>
+        <tr><td>Graduate Student/Research Scholar - Conference only</td><td>6000*</td><td>7000*</td></tr>
+        <tr><td>Graduate Student/Research Scholar - Tutorial only</td><td>1000</td><td>1250</td></tr>
+        <tr><td>Graduate Student/Research Scholar - Conference + Tutorial</td><td>6500*</td><td>7500*</td></tr>
+        <tr><td>Professional - Conference only</td><td>7000*</td><td>8000*</td></tr>
+        <tr><td>Professional - Tutorial only</td><td>1250</td><td>1500</td></tr>
+        <tr><td>Professional - Conference + Tutorial</td><td>7500*</td><td>8500*</td></tr>
+      </table>
+      <table>
+        <tr><th>Category</th><th>Fee</th></tr>
+        <tr><td>Indian Non-Author Attendee</td><td>3500 (IEEE) / 5000 (Non-IEEE)</td></tr>
+        <tr><td>Rate per Additional Paper</td><td>3000</td></tr>
+        <tr><td>Extra Page (after 6 pages)</td><td>500</td></tr>
+      </table>
+      <ul>
+        <li>*Early Bird: INR 1000 discount on conference and combo registration.</li>
+        <li>*Late Registration: INR 1000 additional charge.</li>
+        <li>Virtual Mode: INR 1000 additional charge.</li>
+      </ul>
+    </div>
+
+    <div id="foreign" class="tab-content">
+      <table>
+        <tr><th>Category</th><th>IEEE Member (USD)</th><th>Non-IEEE Member (USD)</th></tr>
+        <tr><td>Graduate Student/Research Scholar - Conference only</td><td>150*</td><td>200*</td></tr>
+        <tr><td>Graduate Student/Research Scholar - Tutorial only</td><td>40</td><td>50</td></tr>
+        <tr><td>Graduate Student/Research Scholar - Conference + Tutorial</td><td>175*</td><td>225*</td></tr>
+        <tr><td>Professional - Conference only</td><td>200*</td><td>250*</td></tr>
+        <tr><td>Professional - Tutorial only</td><td>50</td><td>75</td></tr>
+        <tr><td>Professional - Conference + Tutorial</td><td>225*</td><td>300*</td></tr>
+      </table>
+      <table>
+        <tr><th>Category</th><th>Fee</th></tr>
+        <tr><td>Rate per Additional Paper</td><td>50</td></tr>
+        <tr><td>Extra Page (after 6 pages)</td><td>20</td></tr>
+      </table>
+      <ul>
+        <li>*Early Bird: USD 25 discount on conference and combo registration.</li>
+        <li>*Late Registration: USD 25 additional charge.</li>
+        <li>Virtual Mode: USD 25 additional charge.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
